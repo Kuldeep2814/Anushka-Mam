@@ -1,0 +1,133 @@
+/* General Reset */
+body,
+h1,
+h2,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background and Font */
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url("/background.jpg"); /* Path to your image */
+  background-size: cover; /* Ensure the image covers the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: #f0f0f0; /* Light color for text to stand out against the dark background */
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App Container Styling */
+.app-container {
+  background: rgba(
+    50,
+    50,
+    50,
+    0.7
+  ); /* Slightly dark background with some transparency */
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Headings Styling */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #f0f0f0; /* Light color for better contrast */
+}
+
+h2 {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #e0e0e0; /* Slightly lighter color for better readability */
+}
+
+/* Special Heading Text Color */
+.special-heading {
+  color: #e2bfd9; /* Example color for highlighting */
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 15px; /* Space between buttons */
+  align-items: center; /* Center the buttons horizontally */
+}
+
+/* Button Styling */
+button {
+  background-color: #ff69b4;
+  color: #3a1078;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%; /* Full width for buttons */
+}
+
+button:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ff1493;
+}
+
+/* Message Styling */
+.message {
+  margin: 20px 0;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #fffed3; /* Light color for readability */
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #dcdcdc; /* Matches the color of h2 for consistency */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .app-container {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  footer {
+    font-size: 0.7em;
+  }
+}
